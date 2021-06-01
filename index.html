@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+			.pc{ background: url('./pc.png'); background-size:cover; }
+		</style>
+	</head>
+	<body>
+		<div style="background:url('./guo.jpg');background-size:cover;">
+			<div class="" id="pc" style="padding-bottom: 141.45%;">
+			</div>
+		</div>
+		<script>
+			window.onload = function() {
+				var img = new Image();
+				img.src = './guo.jpg';
+				if (img.width == 0) {
+					alert('null')
+				} else {
+					document.getElementById("pc").className = "pc";
+				}
+			}
+		</script>
+	</body>
+
+</html>
